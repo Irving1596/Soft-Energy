@@ -1,0 +1,238 @@
+<div class="wrapper">
+  <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('./assets/img/penonome3.jpg');">
+      <div class="filter"></div>
+      
+  </div>
+  <div class="section section-navbars">
+    <div id="navbar">
+   
+            
+              <div class="owner blue lighten-5">
+                <br>
+                <div  class="animated zoomInUp" >
+                <div class="titulo-seccion blue lighten-5" style="font-weight:bold; margin: 40px  50px;"><h1>Parque Eólico de Penonomé </h1> <span class="linea"></span></div>
+              </div>
+              </div>
+            
+       
+        <div class="navigation-example-eepen">
+    
+            <nav class="navbar navbar-expand-lg navbar-transparent">
+                <div class="container">
+  
+                    <div class="collapse navbar-collapse" id="navbar-transparent">
+  
+  <div class="section profile-content">
+      <div class="container">
+        <div class="owner ">
+          <br>
+          <div  class="animated zoomInUp" >
+          <div class="titulo-seccion blue lighten-5" style="font-weight:bold; margin: 20px  30px"><h2>Inicios </h2> <span class="linea"></span></div>
+        </div>
+        </div>
+          <div class="row  blue lighten-5">
+ 
+                      <div class="col-lg-6 col-md-12 ">
+                          <!--<h2 class="title">Inicios</h2><span class="linea_inic"></span><br/>-->
+                          <p class="description" style="color: black; font-size: 1.2em">
+                            El Parque Eólico Penonomé comenzó a construirse en 2012 a cargo de la empresa de capital español Unión Eólica Panamá (UEP) y ha requerido una inversión global de 564 millones de dólares, de los cuales 427 millones de dólares ha sido aportados por el conglomerado internacional InterEnergy.                       
+                             </p><br/>
+                          <p class="description" style="color: black; font-size: 1.2em">
+                            Su capacidad de generación es de hasta 270 megavatios, lo que representa entre el 6 % y el 7 % de la energía que demanda el mercado panameño.                                                
+                               </p><br/>
+  
+                         
+                      </div>
+                        <br>
+                      <div class="col-lg-6 col-md-14">
+                          <div  class="animated lightSpeedIn" >
+                              <div class="energia" >
+     
+                                      <img class="log" src="assets/img/penonome2.jpg" href="https://www.creative-tim.com" alt=""  style=" max-width: 100%; height: auto;" >
+                                  </div>
+                                  </div>
+                      </div>
+            
+          </div>
+          <br/>
+          <br/>
+        
+        
+          <div class="nav-tabs-navigation  " >
+             
+              <div class="nav-tabs-wrapper ">
+                 
+                  <ngb-tabset [justify]="'center'" type="pills">
+                      <ngb-tab title="Ubicación" >
+                          <ng-template ngbTabContent>
+                      
+                              <div class="container"  >
+                    
+                        <agm-map [zoom]="16"  style="height: 550px"  [latitude]="lat" [longitude]="lng">
+                          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                        </agm-map>
+                            
+                          </div>
+                        </ng-template>
+                      </ngb-tab>
+                      <ngb-tab title="Operacion">
+                          <ng-template ngbTabContent>
+             <!-- Horizontal Steppers -->
+<div class="row ">
+    <div class="col-md-11 " style="margin: auto">
+  
+      <!-- Stepers Wrapper -->
+      <ul class="stepper stepper-horizontal green lighten-5">
+  
+        <!-- First Step -->
+        <li class="completed">
+          <a href="#!">
+            <span class="circle">1</span>
+
+            <h2 style="color: black">Inicio</h2>
+            <br>    <br>   
+                          <!-- Section Description -->
+        <div class="step-content green lighten-5" disableWaves="true" style="font-size:3em;color: black ">
+            <p style="font-size:0.4em ">Las turbinas inician operación a partir de velocidades de viento de 3 m/s y alcanzan su máxima capacidad cuando el viento llega a los 13 m/s.</p>
+    
+          </div>
+          </a>
+
+        </li>
+  
+        <!-- Second Step -->
+        <li class="active ">
+          <a href="#!">
+            <span class="circle ">2</span>
+            <h2 style="color: black">Conexión</h2>
+          
+            <br>    <br>   
+            <!-- Section Description -->
+<div class="step-content green lighten-5" disableWaves="false" style="font-size:3em;color: black">
+<p style="font-size:0.4em ">El Parque Eólico se conecta al Sistema Eléctrico Nacional a través de la subestación El Coco, ubicada en el Distrito de Penonomé, Provincia de Coclé.</p>
+
+</div>
+          </a>
+        </li>
+  
+        <!-- Third Step -->
+        <li class="active ">
+          <a href="#!">
+            <span class="circle">3</span>
+            <h2 style="color: black">Entrega</h2>
+            <br>    <br>      
+            <!-- Section Description -->
+<div class="step-content green lighten-5" disableWaves="false" style="font-size:3em;color: black">
+<p style="font-size:0.4em">La energía producida por el Parque Eólico es entregada a las empresas distribuidoras para abastecer a más de 250 mil familias panameñas.</p>
+
+</div>
+          </a>
+        </li>
+  
+      </ul>
+      <!-- /.Stepers Wrapper -->
+  
+    </div>
+  </div>
+  <!-- /.Horizontal Steppers -->
+                      </ng-template>
+                      </ngb-tab>
+
+                      <ngb-tab title="Información">
+                          <ng-template ngbTabContent>
+                      
+                              <div class="container"  >
+                       
+                        <!--<div #gmap id="map" style="width:50%;height:100px"></div>
+                          <div class="col-md-3 col-sm-12 col-xs-12">
+                              <button (click)="setMapType('roadmap')"class="btn btn-primary">Mapa</button>
+                              <button (click)="setMapType('satellite')" class="btn btn-danger">Satélite</button>
+                    
+                            </div>
+                            --> 
+                            <div class="step-content green lighten-5" disableWaves="false" style="font-size:1.4em;color: black;text-align:justify;font-style:initial">
+                              <pre style="text-align: justify">  
+        Nombre: Laudato Si
+                               
+        Fecha inicial de contrucción: Septiembre 2011
+                                     
+        Fecha de finalización: abril 2016
+                                    
+        Inversión: 570 millones
+                                   
+        Aerogeneradores: 88 
+
+        Estructura: 
+                    Torre: 90 metros de altura.
+                    Aspa: 52.5 metros de longitud.
+                    Área de barrido: 110 metros.
+                                    
+        Capacidad: 270 megawatts
+                            
+        Empresa a cargo del proyecto: Unión Eólica Panameña (UEP)
+                                   
+        Aporte a la demanda energética del país: 7%
+                              </pre>
+                                 
+                              
+                                
+                                </div>
+                                          
+                          </div>
+                        </ng-template>
+                      </ngb-tab>
+                      
+
+              
+                    <ngb-tab title="Beneficios">
+                        <ng-template ngbTabContent>
+                    
+                            <div class="container"  >
+
+                       
+                           <div class="step-content green lighten-5" disableWaves="true" style="font-size:1.4em;color: black;text-align:justify;font-style:initial">
+                            <pre style="text-align: justify">  
+  - Reducción en promedio anual de emisiones de 450 mil toneladas de CO2 (dióxido de carbono)
+    a la atmósfera, evitando el calentamiento terrestre como consecuencia
+    del efecto invernadero.
+                          
+  - Mitigación en la emisión de 1,000 toneladas de NO (óxido de nitrógeno) y 500 toneladas 
+    de SO2 (dióxido de azufre), que contribuye a la no formación de lluvia ácida.
+  
+  - Reducción aproximada de 900 mil barriles de petróleo al año.
+
+  - No contamina el ambiente con ruido, lo que permite que se desarrollen otras actividades cercanas.
+
+  -Representa un ahorra aproximado de $88 millones al Sistema Eléctrico Panameño anualmente.
+                            </pre>
+                               
+                            
+                              
+                              </div>
+                                    
+                        </div>
+                      </ng-template>
+                    </ngb-tab>
+                    
+              
+                  </ngb-tabset>
+                  <!-- 
+                  <div #gmap id="map" style="width:100%;height:550px"></div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                      <button (click)="setMapType('roadmap')"class="btn btn-primary">Mapa</button>
+                      <button (click)="setMapType('satellite')" class="btn btn-danger">Satélite</button>
+            
+                    </div>
+                    -->
+          </div>
+        </div>
+   
+      </div>
+  </div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div >
+</div>

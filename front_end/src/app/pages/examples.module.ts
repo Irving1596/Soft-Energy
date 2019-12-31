@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule , ReactiveFormsModule} from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from '../app-routing.module';
 
@@ -21,6 +21,7 @@ import { EcPanAmComponent } from './etermica/ec-pan-am/ec-pan-am.component';
     imports: [
         CommonModule,
         FormsModule,
+        ReactiveFormsModule,
         NgbModule,
         AppRoutingModule,
         MDBBootstrapModule.forRoot(),

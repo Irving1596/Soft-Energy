@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Usuario} from 'app/clases/user.class';
 //import { MatSnackBar } from '@angular/material';
 import { ApiService } from  'app/services/api.service';
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
     selector: 'app-signup',
@@ -9,6 +10,7 @@ import { ApiService } from  'app/services/api.service';
     styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent implements OnInit {
+  validatingForm: FormGroup;
     test : Date = new Date();
     focus;
     focus1;
@@ -37,6 +39,29 @@ export class SignupComponent implements OnInit {
     }
   
     ngOnInit() {
+      this.validatingForm = new FormGroup({
+        signupFormModalName: new FormControl('', Validators.required),
+        signupFormModalLastName: new FormControl('', Validators.required),
+        signupFormModalEmail: new FormControl('', Validators.email),
+        signupFormModalPassword: new FormControl('', Validators.required),
+      });
+    }
+  
+    get signupFormModalName() {
+      return this.validatingForm.get('signupFormModalName');
+    }
+
+      
+    get signupFormModalLastName() {
+      return this.validatingForm.get('signupFormModalLastName');
+    }
+  
+    get signupFormModalEmail() {
+      return this.validatingForm.get('signupFormModalEmail');
+    }
+  
+    get signupFormModalPassword() {
+      return this.validatingForm.get('signupFormModalPassword');
     }
   
     f_crear_profesor(){
